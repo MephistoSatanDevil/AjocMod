@@ -18,11 +18,11 @@ IF
 	Global("AGVillageHeld","GLOBAL",1)
 THEN
 	RESPONSE #100
-		ForceSpell(Myself,AJOC_FREEZE_GLOBAL)
-		ActionOverride("agmag01",ForceSpell(Myself,AJOC_FREEZE_GLOBAL))
-		ActionOverride("agmag02",ForceSpell(Myself,AJOC_FREEZE_GLOBAL))
-		ActionOverride("agmag03",ForceSpell(Myself,AJOC_FREEZE_GLOBAL))
-		ActionOverride("agmag04",ForceSpell(Myself,AJOC_FREEZE_GLOBAL))
+		ReallyForceSpellRES("AGwi966",Myself)
+		ActionOverride("agmag01",ReallyForceSpellRES("AGwi966",Myself))
+		ActionOverride("agmag02",ReallyForceSpellRES("AGwi966",Myself))
+		ActionOverride("agmag03",ReallyForceSpellRES("AGwi966",Myself))
+		ActionOverride("agmag04",ReallyForceSpellRES("AGwi966",Myself))
 		SetGlobal("AGVillageHeld","GLOBAL",4)
 END
 
