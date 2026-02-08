@@ -15,7 +15,7 @@ IF
 	HaveSpell(WIZARD_VOCALIZE)
 THEN
 	RESPONSE #100
-		ApplySpell(Myself,WIZARD_VOCALIZE)
+		ReallyForceSpell(Myself,WIZARD_VOCALIZE)
 END
 
 IF
@@ -24,7 +24,7 @@ IF
 	Global("mirrorimage","LOCALS",0)
 THEN
 	RESPONSE #100
-		ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
 		SetGlobal("mirrorimage","LOCALS",1)
 END
 
@@ -35,19 +35,18 @@ IF
 	HaveSpell(WIZARD_TRUE_SIGHT)
 THEN
 	RESPONSE #100
-		ApplySpell(Myself,WIZARD_TRUE_SIGHT)
+		ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
 END
 
 IF
 	Global("TALKTIME","LOCALS",1)
 	See(NearestEnemyOf(Myself))
-	!Global("AJOC_PARTY_IMMOLATION","LOCALS",2)
 //	HaveSpell(AJOC_PARTY_IMMOLATION)
+	HaveSpellRES("AGWI968")
 	Global("ForceSpike","LOCALS",0)
 THEN
 	RESPONSE #100
-		IncrementGlobal("AJOC_PARTY_IMMOLATION","LOCALS",1)
-		ApplySpellRES("AGWI968",Myself)
+		ReallyForceSpellRES("AGWI968",Myself)
 //		Spell(Myself,AJOC_PARTY_IMMOLATION)
 		SetGlobal("ForceSpike","LOCALS",1)
 END
@@ -59,20 +58,19 @@ IF
 	Global("FingerOfDeath","LOCALS",0)
 THEN
 	RESPONSE #100
-		ApplySpell(FourthNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+		ReallyForceSpell(FourthNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
 		SetGlobal("FingerOfDeath","LOCALS",1)
 END
 
 IF
 	Global("TALKTIME","LOCALS",1)
 	See(NearestEnemyOf(Myself))
-	!Global("AJOC_CORPAE_CURSE","LOCALS",2)
 //	HaveSpell(AJOC_CORPAE_CURSE)
+	HaveSpellRES("AGWI967")
 	Global("Curse","LOCALS",0)
 THEN
 	RESPONSE #100
-		IncrementGlobal("AJOC_CORPAE_CURSE","LOCALS",1)
-		ApplySpellRES("AGWI967",Myself)
+		ReallyForceSpellRES("AGWI967",Myself)
 //		Spell(Myself,AJOC_CORPAE_CURSE)
 		SetGlobal("Curse","LOCALS",1)
 END
@@ -84,7 +82,7 @@ IF
 	Global("FingerOfDeath","LOCALS",1)
 THEN
 	RESPONSE #100
-		ApplySpell(FourthNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+		ReallyForceSpell(FourthNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
 		SetGlobal("FingerOfDeath","LOCALS",2)
 END
 
@@ -92,36 +90,22 @@ IF
 	Global("TALKTIME","LOCALS",1)
 	HaveSpell(WIZARD_MIRROR_IMAGE)
 	Global("mirrorimage","LOCALS",1)
+	!StateCheck(Myself,STATE_MIRRORIMAGE)
 THEN
 	RESPONSE #100
-		ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
 		SetGlobal("mirrorimage","LOCALS",2)
 END
 
 IF
 	Global("TALKTIME","LOCALS",1)
 	See(NearestEnemyOf(Myself))
-	!Global("AJOC_PARTY_IMMOLATION","LOCALS",2)
 //	HaveSpell(AJOC_PARTY_IMMOLATION)
-	Global("ForceSpike","LOCALS",0)
-THEN
-	RESPONSE #100
-		IncrementGlobal("AJOC_PARTY_IMMOLATION","LOCALS",1)
-		ApplySpellRES("AGWI968",Myself)
-//		Spell(Myself,AJOC_PARTY_IMMOLATION)
-		SetGlobal("ForceSpike","LOCALS",1)
-END
-
-IF
-	Global("TALKTIME","LOCALS",1)
-	See(NearestEnemyOf(Myself))
-	!Global("AJOC_PARTY_IMMOLATION","LOCALS",2)
-//	HaveSpell(AJOC_PARTY_IMMOLATION)
+	HaveSpellRES("AGWI968")
 	Global("ForceSpike","LOCALS",1)
 THEN
 	RESPONSE #100
-		IncrementGlobal("AJOC_PARTY_IMMOLATION","LOCALS",1)
-		ApplySpellRES("AGWI968",Myself)
+		ReallyForceSpellRES("AGWI968",Myself)
 //		Spell(Myself,AJOC_PARTY_IMMOLATION)
 		SetGlobal("ForceSpike","LOCALS",2)
 END
@@ -133,7 +117,7 @@ IF
 	Global("FingerOfDeath","LOCALS",2)
 THEN
 	RESPONSE #100
-		ApplySpell(FourthNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+		ReallyForceSpell(FourthNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
 		SetGlobal("FingerOfDeath","LOCALS",3)
 END
 
