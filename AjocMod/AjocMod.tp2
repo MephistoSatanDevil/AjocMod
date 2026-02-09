@@ -323,91 +323,91 @@ COPY ~AjocMod/itm/AGAMUTHI.ITM~     ~override/AGAMUTHI.ITM~
   SAY NAME1 @18
   SAY NAME2 @19
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@20" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @21" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@21" END
 
 COPY ~AjocMod/itm/AGBELT01.ITM~     ~override/AGBELT01.ITM~
   SAY NAME1 @22
   SAY NAME2 @23
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@24" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @25" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@25" END
 
 COPY ~AjocMod/itm/agbladen.itm~     ~override/agbladen.itm~
   SAY NAME1 @26
   SAY NAME2 @27
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@28" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @29" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@29" END
 
 COPY ~AjocMod/itm/AGCHAIN.ITM~      ~override/AGCHAIN.ITM~
   SAY NAME1 @30
   SAY NAME2 @31
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@32" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @33" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@33" END
 
 COPY ~AjocMod/itm/AGCRAZY.ITM~      ~override/AGCRAZY.ITM~
   SAY NAME1 @18
   SAY NAME2 @34
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@20" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @35" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@35" END
 
 COPY ~AjocMod/itm/AGDAGG01.ITM~     ~override/AGDAGG01.ITM~
   SAY NAME1 @36
   SAY NAME2 @37
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@38" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @39" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@39" END
 
 COPY ~AjocMod/itm/agdg001.itm~      ~override/agdg001.itm~
   SAY NAME1 @40
   SAY NAME2 @41
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@42" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @43" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@43" END
 
 COPY ~AjocMod/itm/AGGUAN01.ITM~     ~override/AGGUAN01.ITM~
   SAY NAME1 @44
   SAY NAME2 @45
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@46" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @47" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@47" END
 
 COPY ~AjocMod/itm/AGHELM20.ITM~     ~override/AGHELM20.ITM~
   SAY NAME1 @48
   SAY NAME2 @49
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@50" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @51" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@51" END
 
 COPY ~AjocMod/itm/AGKEY01.ITM~      ~override/AGKEY01.ITM~
   SAY NAME1 @52
   SAY NAME2 @52
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@53" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @53" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@53" END
 
 COPY ~AjocMod/itm/AGLETT01.ITM~     ~override/AGLETT01.ITM~
   SAY NAME1 @54
   SAY NAME2 @54
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@55" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @55" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@55" END
 
 COPY ~AjocMod/itm/AGMOOSE.ITM~      ~override/AGMOOSE.ITM~
   SAY NAME1 @36
   SAY NAME2 @56
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@38" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @57" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@57" END
 
 COPY ~AjocMod/itm/Agoakha2.itm~     ~override/Agoakha2.itm~
   SAY NAME1 @58
   SAY NAME2 @59
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@60" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @61" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@61" END
 
 COPY ~AjocMod/itm/Agoakham.itm~     ~override/Agoakham.itm~
   SAY NAME1 @58
   SAY NAME2 @62
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@60" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @63" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@63" END
 
 COPY ~AjocMod/itm/AGRING02.ITM~     ~override/AGRING02.ITM~
   SAY NAME1 @64
   SAY NAME2 @65
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@66" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @67" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@67" END
 
 COPY ~AjocMod/spl/agrin002.SPL~      ~override~
   SAY NAME1 ~~
@@ -424,7 +424,7 @@ COPY ~AjocMod/itm/AGRING03.ITM~     ~override/AGRING03.ITM~
   SAY NAME1 @64
   SAY NAME2 @68
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@66" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @69" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@69" END
 
 COPY ~AjocMod/spl/agrin003.SPL~      ~override~
   SAY NAME1 ~~
@@ -441,24 +441,24 @@ COPY ~AjocMod/itm/AGRING04.ITM~     ~override/AGRING04.ITM~
   SAY NAME1 @64
   SAY NAME2 @70
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@66" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @71" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@71" END
 
 COPY ~AjocMod/itm/AGRING99.ITM~     ~override/AGRING99.ITM~
   SAY NAME1 @64
   SAY NAME2 @72
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@66" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @73" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@73" END
 
 COPY ~AjocMod/itm/AGSLING4.itm~     ~override/AGSLING4.itm~
   SAY NAME1 @74
   SAY NAME2 @75
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@76" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @77" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@77" END
 
 COPY ~AjocMod/itm/AGSP999S.itm~     ~override/AGSP999S.itm~
   SAY NAME1 @78
   SAY NAME2 @79
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @80" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@80" END
 
 COPY ~AjocMod/itm/JY_01DB.ITM~      ~override/JY_01DB.ITM~
   SAY NAME1 @8
@@ -468,13 +468,13 @@ COPY ~AjocMod/itm/JY_02DB.ITM~      ~override/JY_02DB.ITM~
   SAY NAME1 @8
   SAY NAME2 @8
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@81" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @81" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@81" END
 
 COPY ~AjocMod/itm/JY_03DB.ITM~      ~override/JY_03DB.ITM~
   SAY NAME1 @9
   SAY NAME2 @9
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@82" END
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = " @82" END
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@82" END
 
 // Ajoc's Spells
 
