@@ -8,7 +8,7 @@
 BEGIN ~AGLORON~
 
 IF ~!Global("AGLoronGate","GLOBAL",2)
-!Global("AGLoronJourney","GLOBAL",2)
+!GlobalGT("AGLoronJourney","GLOBAL",0)
 !Global("AGBanditsDead","GLOBAL",7)
 !Global("AGLoronVillage","GLOBAL",1)
 !Global("AGLoronArrived","GLOBAL",1)
@@ -21,8 +21,9 @@ END
 
 IF ~~ THEN BEGIN 1 // from: 0.2
   SAY @5 /* ~Oh no, not MORE bandits!~ #62829 */
-  IF ~~ THEN DO ~EscapeArea()
-~ JOURNAL @6 /* ~Escorting Loron
+  IF ~~ THEN DO ~AddJournalEntry(@1006,QUEST_DONE)
+EscapeArea()
+~ /* JOURNAL @6 ~Escorting Loron
 
 I tried to kill Loron, but he did a runner. I guess if I still want his money I'll have to pay a visit to his village, which Brus pointed out to me. c~ #62830 */ EXIT
 END
@@ -40,14 +41,14 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 3.0
   SAY @10 /* ~Meet me at the City Gates. Buy any supplies you may need first and we can be off. Once again, I thank you.~ #62833 */
-  IF ~~ THEN DO ~SetGlobal("AGLoronGate","GLOBAL",1)
-					EscapeArea()~ JOURNAL @11 /* ~Escorting Loron
+  IF ~~ THEN DO ~AddJournalEntry(@1002,QUEST)
+					SetGlobal("AGLoronGate","GLOBAL",1)
+					EscapeArea()~ /* JOURNAL @11 ~Escorting Loron
 
 I accepted to take Loron back to his village, and he offered a decent reward, which will help me pay for Gaelan's fee. He said to meet him at the City Gates.  ~ #62834 */ EXIT
 END // SetGlobal("AGBrusYes","GLOBAL",0) (unused)
 
 IF ~Global("AGLoronGate","GLOBAL",2)
-!Global("AGLoronJourney","GLOBAL",1)
 ~ THEN BEGIN 5 // from:
   SAY @12 /* ~Good to see you made it! I was getting nervous on my own.~ #62835 */
   IF ~~ THEN REPLY @13 /* ~Sorry for any wait you had.~ #62836 */ GOTO 6
@@ -67,7 +68,7 @@ IF ~Global("AGLoronJourney","GLOBAL",2)
   SAY @17 /* ~Oh no! I knew it! We've been ambushed...protect me!~ #62840 */
   IF ~~ THEN REPLY @19 /* ~Right! Let's take these guys out!~ #62841 */ DO ~SetGlobal("AGLoronJourney","GLOBAL",0)
 																			SetGlobal("AGLoronBandit","GLOBAL",1)~ JOURNAL @18 /* ~<No Text>~ #62176 */ EXIT
-  IF ~~ THEN REPLY @20 /* ~Erm...these guys look tough, sort yourself out mate!~ #62842 */ DO ~SetGlobal("AGLoronAttack","LOCALS",1)
+  IF ~~ THEN REPLY @20 /* ~Erm...these guys look tough, sort yourself out mate!~ #62842 */ DO ~AddJournalEntry(@1007,QUEST_DONE)																							SetGlobal("AGLoronAttack","LOCALS",1)
 																								EscapeArea()~ EXIT
 END
 
@@ -76,7 +77,8 @@ IF ~Global("AGBanditsDead","GLOBAL",7)
   SAY @21 /* ~Thank you very much, I would have been killed if it wasn't for you. Let's just hurry to Adilthora and I'll give you your reward for such an honorable deed.~ #62843 */
   IF ~~ THEN REPLY @22 /* ~No problem, it was easy.~ #62844 */ DO ~SetGlobal("AGLoronBandit","GLOBAL",0)
 ~ GOTO 9
-  IF ~~ THEN REPLY @23 /* ~I'm fed up with you...DIE!~ #62845 */ DO ~SetGlobal("AGLoronAttack","LOCALS",1)
+  IF ~~ THEN REPLY @23 /* ~I'm fed up with you...DIE!~ #62845 */ DO ~AddJournalEntry(@1006,QUEST_DONE)
+																		SetGlobal("AGLoronAttack","LOCALS",1)
 																		EscapeArea()~ EXIT
 END
 
@@ -90,9 +92,10 @@ IF ~Global("AGLoronVillage","GLOBAL",1)
 ~ THEN BEGIN 10 // from:
   SAY @25 /* ~You ready to go to Adilthora yet?~ #62847 */
   IF ~~ THEN REPLY @26 /* ~Let me just finish with these bandit corpses.~ #62848 */ EXIT
-  IF ~~ THEN REPLY @28 /* ~Ok, let's go.~ #62849 */ DO ~SetGlobal("AGLoronVillage","GLOBAL",0)
+  IF ~~ THEN REPLY @28 /* ~Ok, let's go.~ #62849 */ DO ~AddJournalEntry(@1003,QUEST_DONE)
+														SetGlobal("AGLoronVillage","GLOBAL",0)
 														StartCutSceneMode()
-														StartCutScene("AGVill")~ JOURNAL @27 /* ~Escorting Loron
+														StartCutScene("AGVill")~ /* JOURNAL @27 ~Escorting Loron
 
 We had a little trouble with bandits, but they were not too hard to deal with. R~ #62850 */ EXIT
 END

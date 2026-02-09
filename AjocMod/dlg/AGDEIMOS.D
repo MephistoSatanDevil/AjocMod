@@ -9,6 +9,7 @@ BEGIN ~AGDEIMOS~
 
 IF ~True()
 !Global("deimos2","AG8000",2)
+Global("deimos2Authorities","LOCALS",0)
 ~ THEN BEGIN 0 // from:
   SAY @1 /* ~Hi, I'm Deimos. I have lived in this cave ever since my old home banished me.~ #62804 */
   IF ~~ THEN REPLY @2 /* ~Greetings, why were you exiled?~ #62805 */ GOTO 1
@@ -41,9 +42,10 @@ IF ~~ THEN BEGIN 5 // from: 4.0
   IF ~~ THEN REPLY @11 /* ~Just give it back, or else the authorities will get you if I don't!~ #62814 */ GOTO 6
 END
 
-IF ~~ THEN BEGIN 6 // from: 5.0
+IF ~!Global("deimos2","AG8000",2)
+Global("deimos2Authorities","LOCALS",1)~ THEN BEGIN 6 // from: 5.0
   SAY @12 /* ~Authorities...uh oh!~ #62815 */
-  IF ~~ THEN DO ~~ EXIT
+  IF ~~ THEN DO ~SetGlobal("deimos2Authorities","LOCALS",1)~ EXIT
 END
 
 IF ~False()

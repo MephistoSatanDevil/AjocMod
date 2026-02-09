@@ -1,8 +1,9 @@
-IF
+IF // Unused
 	OnCreation()
 	Global("AGNoBandits","GLOBAL",0)
 THEN
 	RESPONSE #100
+		SetGlobal("AGNoBandits","GLOBAL",1)
 		CreateCreature("REBAND01",[488.558],10) // Bandit
 		CreateCreature("REBAND02",[500.454],10) // Bandit
 		CreateCreature("REBAND03",[552.476],10) // Bandit

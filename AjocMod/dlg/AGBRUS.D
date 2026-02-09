@@ -27,18 +27,20 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 2.0
   SAY @8 /* ~No problem.~ #62797 */
-  IF ~~ THEN DO ~SetGlobal("AGLoronGov","GLOBAL",1)
+  IF ~~ THEN DO ~AddJournalEntry(@1004,QUEST)
+SetGlobal("AGLoronGov","GLOBAL",1)
 EscapeArea()
-~ JOURNAL @9 /* ~Escorting Loron
+~ /* JOURNAL @9 ~Escorting Loron
 
 Brus, a small boy in the slums, told me if I wanted work and money, I should go and visit Loron in the Government District. He is apparentley in need of some adventurers to escort him safely back to his village. He is allegedly very rich, and may pay well...~ #62798 */ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 2.1
   SAY @10 /* ~Urr, sure.~ #62799 */
-  IF ~~ THEN DO ~SetGlobal("AGLoronGov","GLOBAL",1)
+  IF ~~ THEN DO ~AddJournalEntry(@1005,QUEST)
+SetGlobal("AGLoronGov","GLOBAL",1)
 EscapeArea()
-~ JOURNAL @11 /* ~Escorting Loron
+~  /* JOURNAL @11 ~Escorting Loron
 
 Brus, a small boy in the slums, told me there is a rich man named Loron in the Government District. He says that the man needs an escort back to his village, but I am considering killing him for his cash. Less work, more pay.~ #62800 */ EXIT
 END

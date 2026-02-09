@@ -61,26 +61,31 @@ AUTO_TRA ~weidu_external/AjocMod/Languages/autotra/%s~
 
 LANGUAGE ~English~
          ~english~
+         ~AjocMod/languages/english/Journal.tra~
          ~AjocMod/languages/english/Setup.tra~
          ~AjocMod/languages/english/items.tra~
 
 LANGUAGE ~Spanish (translation by Clan REO)~
          ~spanish~
+         ~AjocMod/languages/spanish/Journal.tra~
          ~AjocMod/languages/spanish/Setup.tra~
          ~AjocMod/languages/spanish/items.tra~
 
 LANGUAGE ~Russian (translation by Vagrant, Alex & AERIE.RU)~
          ~russian~
+         ~AjocMod/languages/russian/Journal.tra~
          ~AjocMod/languages/russian/Setup.tra~
 //         ~AjocMod/languages/russian/items.tra~ // Included in setup.tra to avoid encodage issue
 
 LANGUAGE ~Deutsch (Uebersetzung von Rumpelstilz)~
          ~german~
+         ~AjocMod/languages/german/Journal.tra~
          ~AjocMod/languages/german/Setup.tra~
          ~AjocMod/languages/german/items.tra~
 
 LANGUAGE ~Italian (translation by Ilot)~
          ~italian~
+         ~AjocMod/languages/italian/Journal.tra~
          ~AjocMod/languages/italian/Setup.tra~
          ~AjocMod/languages/italian/items.tra~
 
@@ -96,6 +101,9 @@ APPEND ~SPELL.IDS~ ~2966 AJOC_FREEZE_GLOBAL~ UNLESS ~AJOC_FREEZE_GLOBAL~
 APPEND ~SPELL.IDS~ ~2967 AJOC_CORPAE_CURSE~ UNLESS ~AJOC_CORPAE_CURSE~
 APPEND ~SPELL.IDS~ ~2968 AJOC_PARTY_IMMOLATION~ UNLESS ~AJOC_PARTY_IMMOLATION~
 */
+
+//  
+ADD_JOURNAL TITLE (@1000) @1 @1002 @1003 @1004 @1005 @1006 @1007 // @51708 @1008
 
 COPY ~AjocMod/are~   ~override~ // Area Files
      ~AjocMod/Pics~   ~override~ // Mos and Bmp files

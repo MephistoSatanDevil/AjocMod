@@ -2,10 +2,10 @@ IF
 	Global("AG8000FirstVisit","AG8000",0)
 THEN
 	RESPONSE #100
+		SetGlobal("AG8000FirstVisit","AG8000",1)
 		CreateCreature("AGDEANO",[1479.1366],6) // Deano
 		CreateCreature("AGDEIMOS",[994.1475],6) // Deimos
 		CreateCreature("AGBOSS",[1566.1796],0) // Corpae
-		SetGlobal("AG8000FirstVisit","AG8000",1)
 END
 
 IF
