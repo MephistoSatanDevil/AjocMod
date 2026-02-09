@@ -36,9 +36,9 @@ IF
 	Global("bosstime","AG8000",1)
 THEN
 	RESPONSE #100
+		SetGlobal("bosstime","AG8000",2)
 		StartCutSceneMode()
 		StartCutScene("agbossgo")
-		SetGlobal("bosstime","AG8000",2)
 END
 
 IF

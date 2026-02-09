@@ -49,9 +49,9 @@ END
 IF ~False()
 ~ THEN BEGIN 7 // from:
   SAY @13 /* ~Deano...noooo...it was an accident....I never meant too...!!~ #62816 */
-  IF ~~ THEN DO ~StartCutSceneMode()
+  IF ~~ THEN DO ~SetGlobal("bosstime","AG8000",1)
+StartCutSceneMode()
 StartCutScene("agdemdie")
-SetGlobal("bosstime","AG8000",1)
 ~ EXIT
 END
 
