@@ -75,8 +75,7 @@ END
 IF ~Global("AGBanditsDead","GLOBAL",7)
 ~ THEN BEGIN 8 // from:
   SAY @21 /* ~Thank you very much, I would have been killed if it wasn't for you. Let's just hurry to Adilthora and I'll give you your reward for such an honorable deed.~ #62843 */
-  IF ~~ THEN REPLY @22 /* ~No problem, it was easy.~ #62844 */ DO ~SetGlobal("AGLoronBandit","GLOBAL",0)
-~ GOTO 9
+  IF ~~ THEN REPLY @22 /* ~No problem, it was easy.~ #62844 */ DO ~SetGlobal("AGLoronBandit","GLOBAL",0)~ GOTO 9
   IF ~~ THEN REPLY @23 /* ~I'm fed up with you...DIE!~ #62845 */ DO ~AddJournalEntry(@1006,QUEST_DONE)
 																		SetGlobal("AGLoronAttack","LOCALS",1)
 																		EscapeArea()~ EXIT
@@ -93,6 +92,7 @@ IF ~Global("AGLoronVillage","GLOBAL",1)
   SAY @25 /* ~You ready to go to Adilthora yet?~ #62847 */
   IF ~~ THEN REPLY @26 /* ~Let me just finish with these bandit corpses.~ #62848 */ EXIT
   IF ~~ THEN REPLY @28 /* ~Ok, let's go.~ #62849 */ DO ~AddJournalEntry(@1003,QUEST_DONE)
+														RevealAreaOnMap("AG1000")
 														SetGlobal("AGLoronVillage","GLOBAL",0)
 														StartCutSceneMode()
 														StartCutScene("AGVill")~ /* JOURNAL @27 ~Escorting Loron

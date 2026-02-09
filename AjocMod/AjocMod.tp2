@@ -589,3 +589,94 @@ END
 // COPY ~AjocMod\installer.bat~ ~AjocMod_Installer.bat~
 // AT_INTERACTIVE_EXIT ~AjocMod_Installer.bat~
 // AT_INTERACTIVE_UNINSTALL ~AjocMod\Uninstaller.bat~
+
+/*
+COPY_EXISTING ~AG1000.are~ ~override~
+   LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 783 
+    fj_loc_y       = 691 
+    fj_orientation = 0  
+    STR_VAR
+    fj_structure_type = entrance
+    fj_name           = Shrine
+  END
+
+
+// Append mastarea.2da with the new areas
+	APPEND ~MASTAREA.2da~ ~AG1000 value~ UNLESS ~AG1000~ // Adilthora
+
+ACTION_IF NOT GAME_IS ~eet~ THEN BEGIN
+
+PRINT ~Icons added to regular BG2 map.
+~
+
+			OUTER_SPRINT "game_worldmap" "worldmap"
+
+		INCLUDE ~%MOD_FOLDER%/lib/add_worldmap_tbl.tpa~
+
+		LAF ADD_WORLDMAP_TBL
+			INT_VAR
+				verbose = 1
+				inclSv = 0
+			STR_VAR
+			path_to_areas = EVAL ~%MOD_FOLDER%/Worldmap/bg2_areas.tbl~
+			path_to_links = EVAL ~%MOD_FOLDER%/Worldmap/links.tbl~
+			path_to_trans = EVAL ~%MOD_FOLDER%/Languages/%LANGUAGE%/setup.tra~
+			worldmap = EVAL ~%game_worldmap%~
+		END
+
+END
+
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+
+PRINT ~Icons added to EET map.
+~
+
+			OUTER_SPRINT "game_worldmap" "worldmap"
+
+		INCLUDE ~%MOD_FOLDER%/lib/add_worldmap_tbl.tpa~
+
+		LAF ADD_WORLDMAP_TBL
+			INT_VAR
+				verbose = 1
+				inclSv = 0
+			STR_VAR
+			path_to_areas = EVAL ~%MOD_FOLDER%/Worldmap/eet_areas.tbl~
+			path_to_links = EVAL ~%MOD_FOLDER%/Worldmap/links.tbl~
+			path_to_trans = EVAL ~%MOD_FOLDER%/Languages/%LANGUAGE%/setup.tra~
+			worldmap = EVAL ~%game_worldmap%~
+		END
+
+END
+
+//////////////////////////////////
+// BP-BGT-Worldmap Compatibility
+//////////////////////////////////
+
+PRINT ~Icons assets in case BP-BGT-Worldmap will be installed.
+~
+
+	ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+
+		COPY ~Worldmap/map_mods_areas.tbl~		~Worldmap~
+			APPEND_FILE ~%MOD_FOLDER%/Worldmap/areas.tbl~
+
+		COPY ~Worldmap/map_mods_links.tbl~		~Worldmap~
+			APPEND_FILE ~%MOD_FOLDER%/Worldmap/links.tbl~
+
+		COPY ~Worldmap/map_mods_trans.tra~		~Worldmap~
+			APPEND_FILE_EVALUATE ~%MOD_FOLDER%/Languages/%LANGUAGE%/setup.tra~
+
+	END ELSE BEGIN
+
+		MKDIR ~Worldmap~
+
+		COPY ~%MOD_FOLDER%/Worldmap/areas.tbl~							~Worldmap/map_mods_areas.tbl~
+
+		COPY ~%MOD_FOLDER%/Worldmap/links.tbl~							~Worldmap/map_mods_links.tbl~
+
+		COPY ~%MOD_FOLDER%/Languages/%LANGUAGE%/setup.tra~	~Worldmap/map_mods_trans.tra~
+
+	END
+*/
