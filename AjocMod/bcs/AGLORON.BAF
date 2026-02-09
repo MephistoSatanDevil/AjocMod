@@ -21,7 +21,7 @@ IF
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
-		SetGlobal("AGLoronAttack","GLOBAL",1)
+		SetGlobal("AGLoronAttack","LOCALS",1)
 		EscapeArea()
 END
 
@@ -30,7 +30,7 @@ IF
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
-		SetGlobal("AGLoronAttack","GLOBAL",1)
+		SetGlobal("AGLoronAttack","LOCALS",1)
 		EscapeArea()
 END
 
@@ -39,7 +39,7 @@ IF
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
-		SetGlobal("AGLoronAttack","GLOBAL",1)
+		SetGlobal("AGLoronAttack","LOCALS",1)
 		EscapeArea()
 END
 
@@ -48,7 +48,7 @@ IF
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
-		SetGlobal("AGLoronAttack","GLOBAL",1)
+		SetGlobal("AGLoronAttack","LOCALS",1)
 		EscapeArea()
 END
 
@@ -57,7 +57,7 @@ IF
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
-		SetGlobal("AGLoronAttack","GLOBAL",1)
+		SetGlobal("AGLoronAttack","LOCALS",1)
 		EscapeArea()
 END
 
@@ -66,7 +66,7 @@ IF
 	Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
-		SetGlobal("AGLoronAttack","GLOBAL",1)
+		SetGlobal("AGLoronAttack","LOCALS",1)
 		EscapeArea()
 END
 
@@ -84,7 +84,7 @@ IF
 	Global("AGBanditsDead","GLOBAL",7)
 THEN
 	RESPONSE #100
-		SetGlobal("AGRunAway","GLOBAL",0)
+//		SetGlobal("AGRunAway","GLOBAL",0) (unused)
 		StartDialogueNoSet([PC])
 END
 

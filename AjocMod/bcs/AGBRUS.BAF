@@ -1,4 +1,11 @@
 IF
+	GlobalGT("AGLoronGov","GLOBAL",0)
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+
+IF
 	See([PC])
 	Range([PC],30)
 	Global("bungo01see","LOCALS",0)

@@ -11,7 +11,7 @@ THEN
 		ActionOverride(Player6,MoveToPoint([920.366]))
 		ActionOverride("agloron",MoveToPoint([1033.366]))
 		MoveToPoint([968.258])
-		Wait(4)
+		Wait(3)
 		FadeToColor([30.0],0)
 		Wait(2)
 		ActionOverride("agloron",DestroySelf())

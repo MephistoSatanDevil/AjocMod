@@ -31,10 +31,10 @@ END
 
 IF ~~ THEN BEGIN 3 // from: 4.0 2.1 2.0
   SAY @7 /* ~Fear not, you shall be rewarded, what do y-~ #62859 */
-  IF ~~ THEN DO ~StartCutSceneMode()
-StartCutScene("agbadari")
-SetGlobal("AGLoronArrived","GLOBAL",2)
+  IF ~~ THEN DO ~SetGlobal("AGLoronArrived","GLOBAL",2)
 SetGlobal("AGVillageHeld","GLOBAL",2)
+StartCutSceneMode()
+StartCutScene("agbadari")
 ~ EXIT
 END
 
@@ -75,8 +75,7 @@ END
 IF ~~ THEN BEGIN 10 // from: 9.0
   SAY @20 /* ~He also seems to have a lot of followers, and is very powerful. Be careful.~ #62872 */
   IF ~~ THEN DO ~SetGlobal("AGKillCorpaeCave","GLOBAL",1)
-SetGlobal("LoronSpeak","GLOBAL",2)
-~ GOTO 14
+SetGlobal("LoronSpeak","GLOBAL",2)~ GOTO 14
 END
 
 IF ~~ THEN BEGIN 11 // from:
@@ -97,7 +96,7 @@ IF ~Global("AGKillCorpaeCave","GLOBAL",1)
 END
 
 IF ~~ THEN BEGIN 14 // from: 10.0
-  SAY @24 /* ~Oh and beware of the Oak Fist. They are ancient Clan of Battle Dwatves, and I am not sure why they aid Corpae.~ #62875 */
+  SAY @24 /* ~Oh and beware of the Oak Fist. They are ancient Clan of Battle Dwarves, and I am not sure why they aid Corpae.~ #62875 */
   IF ~~ THEN REPLY @25 /* ~Well, thanks for the information. I will return as soon as possible.~ #62876 */ GOTO 15
 END
 
@@ -120,12 +119,10 @@ AddXPObject(Player2,25000)
 AddXPObject(Player3,25000)
 AddXPObject(Player4,25000)
 AddXPObject(Player5,25000)
-AddXPObject(Player6,25000)
-~ GOTO 18
+AddXPObject(Player6,25000)~ GOTO 18
 END
 
 IF ~~ THEN BEGIN 18 // from: 17.0
   SAY @31 /* ~Until next time, <CHARNAME>.~ #62882 */
-  IF ~~ THEN DO ~EscapeArea()
-~ EXIT
+  IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
