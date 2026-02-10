@@ -3,12 +3,12 @@ IF
 THEN
 	RESPONSE #100
 		CutSceneId("agdeano")
-		ReallyForceSpell("agdeimos",WIZARD_DISINTEGRATE)
-		Wait(2)
 		ReallyForceSpell("agdeimos",WIZARD_LIGHTNING_BOLT)
 		Wait(2)
 		ReallyForceSpell("agdeimos",WIZARD_IMPRISONMENT)
-		Wait(1)
+		Wait(2)
+		ReallyForceSpell("agdeimos",WIZARD_DISINTEGRATE)
+		Wait(2)
 		ActionOverride("agdeimos",DestroySelf())
 		SetGlobal("deimos2","AG8000",1)
 		EndCutSceneMode()

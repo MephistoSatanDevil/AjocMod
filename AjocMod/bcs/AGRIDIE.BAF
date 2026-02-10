@@ -4,12 +4,14 @@ THEN
 	RESPONSE #100
 		CutSceneId("agdeano")
 		ReallyForceSpell("agdeimos",DO_NOTHING)
+		Wait(1)
 		ActionOverride("agdeimos",Polymorph(KOBOLD_XVART))
+		Wait(2)
 		DisplayStringHead("agdeano",18673) // And this should redeem you for all you have done?  I say it is a fitting punishment!
-		EndCutSceneMode()
 		ActionOverride("agdeimos",EscapeArea())
 		Wait(2)
-		SetGlobal("bosstime","AG8000",1)
 		EscapeArea()
+		EndCutSceneMode()
+		SetGlobal("bosstime","AG8000",1)
 END
 

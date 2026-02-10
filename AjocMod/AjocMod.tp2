@@ -102,7 +102,7 @@ APPEND ~SPELL.IDS~ ~2967 AJOC_CORPAE_CURSE~ UNLESS ~AJOC_CORPAE_CURSE~
 APPEND ~SPELL.IDS~ ~2968 AJOC_PARTY_IMMOLATION~ UNLESS ~AJOC_PARTY_IMMOLATION~
 */
 
-//  
+//
 ADD_JOURNAL TITLE (@1000) @1 @1002 @1003 @1004 @1005 @1006 @1007 // @51708 @1008
 
 COPY ~AjocMod/are~   ~override~ // Area Files
@@ -504,18 +504,18 @@ ADD_SPELL ~AjocMod/spl/AGWI968.spl~ 2 8 AJOC_PARTY_IMMOLATION
 
 //Dialogs from Dfiles
 
-COMPILE~AjocMod/dlg/Agadem01.d~
-COMPILE~AjocMod/dlg/Agbadguy.d~
-COMPILE~AjocMod/dlg/Agboss.d~
-COMPILE~AjocMod/dlg/Agbrus.d~
-COMPILE~AjocMod/dlg/Agdeano.d~
-COMPILE~AjocMod/dlg/Agdeimos.d~
-COMPILE~AjocMod/dlg/Aghermit.d~
-COMPILE~AjocMod/dlg/Agloron.d~
-COMPILE~AjocMod/dlg/Agloron2.d~
-COMPILE~AjocMod/dlg/Agmag01.d~
-COMPILE~AjocMod/dlg/Agoakbos.d~
-COMPILE~AjocMod/dlg/Agoakint.d~
+COMPILE ~AjocMod/dlg/Agadem01.d~
+COMPILE ~AjocMod/dlg/Agbadguy.d~
+COMPILE ~AjocMod/dlg/Agboss.d~
+COMPILE ~AjocMod/dlg/Agbrus.d~
+COMPILE ~AjocMod/dlg/Agdeano.d~
+COMPILE ~AjocMod/dlg/Agdeimos.d~
+COMPILE ~AjocMod/dlg/Aghermit.d~
+COMPILE ~AjocMod/dlg/Agloron.d~
+COMPILE ~AjocMod/dlg/Agloron2.d~
+COMPILE ~AjocMod/dlg/Agmag01.d~
+COMPILE ~AjocMod/dlg/Agoakbos.d~
+COMPILE ~AjocMod/dlg/Agoakint.d~
 
 // Ajoc's Scripts
 
@@ -594,9 +594,9 @@ END
 COPY_EXISTING ~AG1000.are~ ~override~
    LPF fj_are_structure
     INT_VAR
-    fj_loc_x       = 783 
-    fj_loc_y       = 691 
-    fj_orientation = 0  
+    fj_loc_x       = 783
+    fj_loc_y       = 691
+    fj_orientation = 0
     STR_VAR
     fj_structure_type = entrance
     fj_name           = Shrine

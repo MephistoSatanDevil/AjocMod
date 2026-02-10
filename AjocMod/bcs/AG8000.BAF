@@ -20,6 +20,7 @@ IF
 	Global("deimos2","AG8000",1)
 THEN
 	RESPONSE #100
+		SmallWait(5)
 		CreateCreature("AGGRIEV",[994.1475],6) // Griever
 		SetGlobal("deimos2","AG8000",2)
 END

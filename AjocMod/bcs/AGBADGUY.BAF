@@ -10,7 +10,6 @@ IF
 	Global("AGCaveVisit","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("AGCaveVisit","GLOBAL",2)
 		StartDialogueNoSet([PC])
 END
 
@@ -30,7 +29,6 @@ IF
 	Global("AGVillageHeld","GLOBAL",4)
 THEN
 	RESPONSE #100
-		SetGlobal("AGVillageHeld","GLOBAL",4)
 		StartDialogueNoSet([PC])
 END
 

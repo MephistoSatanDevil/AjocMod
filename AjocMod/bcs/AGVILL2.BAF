@@ -4,7 +4,7 @@ THEN
 	RESPONSE #100
 		CutSceneId(Player1)
 		Wait(2)
-		FadeFromColor([30.0],0)
+		FadeFromColor([40.0],0)
 		SetGlobal("AGNoBandits","GLOBAL",0)
 		LeaveAreaLUA("ag1000","GTRSK002",[371.245],12)
 		MultiPlayerSync()

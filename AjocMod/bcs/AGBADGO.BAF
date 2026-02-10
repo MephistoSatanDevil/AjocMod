@@ -4,6 +4,7 @@ THEN
 	RESPONSE #100
 		CutSceneId("agbadguy")
 		ReallyForceSpell("agloron2",WIZARD_MAGIC_MISSILE)
+		Wait(1)
 		ActionOverride("agloron2",PlayDead(100))
 		Wait(1)
 		MoveToObject("agloron2")
