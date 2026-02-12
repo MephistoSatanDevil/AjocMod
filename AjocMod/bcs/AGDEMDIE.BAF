@@ -10,7 +10,7 @@ THEN
 		ReallyForceSpell("agdeimos",WIZARD_DISINTEGRATE)
 		Wait(2)
 		ActionOverride("agdeimos",DestroySelf())
-		SetGlobal("deimos2","AG8000",1)
+		SetGlobal("deimos2","MYAREA",1)
 		EndCutSceneMode()
 END
 

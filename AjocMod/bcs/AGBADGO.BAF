@@ -17,7 +17,6 @@ THEN
 		Wait(1)
 		ReallyForceSpell("agbadguy",DRYAD_TELEPORT)
 		Wait(1)
-		EndCutSceneMode()
 		DestroySelf()
 END
 
@@ -62,6 +61,7 @@ THEN
 		Wait(13)
 		ReallyForceSpell("agmag04",DRYAD_TELEPORT)
 		Wait(1)
+		EndCutSceneMode()
 		DestroySelf()
 END
 

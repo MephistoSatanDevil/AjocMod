@@ -1,8 +1,8 @@
 IF
-	Global("AGFirstTIme","AG1600",0)
+	Global("AG_FirstTIme","MYAREA",0)
 THEN
 	RESPONSE #100
-		SetGlobal("AGFirstTIme","AG1600",1)
+		SetGlobal("AG_FirstTIme","MYAREA",1)
 		CreateCreature("agoakbos",[759.470],5) // Oak Fist Captain
 		CreateCreature("agoakdw4",[624.626],8) // Oak Fist Slinger
 		CreateCreature("agoakdw4",[1253.469],5) // Oak Fist Slinger

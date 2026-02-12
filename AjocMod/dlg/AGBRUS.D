@@ -28,7 +28,7 @@ END
 IF ~~ THEN BEGIN 3 // from: 2.0
   SAY @8 /* ~No problem.~ #62797 */
   IF ~~ THEN DO ~AddJournalEntry(@1004,QUEST)
-SetGlobal("AGLoronGov","GLOBAL",1)
+SetGlobal("AG_Loron_Quest","GLOBAL",1)
 EscapeArea()
 ~ /* JOURNAL @9 ~Escorting Loron
 
@@ -38,7 +38,7 @@ END
 IF ~~ THEN BEGIN 4 // from: 2.1
   SAY @10 /* ~Urr, sure.~ #62799 */
   IF ~~ THEN DO ~AddJournalEntry(@1005,QUEST)
-SetGlobal("AGLoronGov","GLOBAL",1)
+SetGlobal("AG_Loron_Quest","GLOBAL",1)
 EscapeArea()
 ~  /* JOURNAL @11 ~Escorting Loron
 

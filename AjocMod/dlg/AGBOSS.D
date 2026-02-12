@@ -34,8 +34,5 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 1.1
   SAY @8 /* ~Don't you worry. I'm going to fight alright.~ #62789 */
-  IF ~~ THEN DO ~Enemy()
-StartCutSceneMode()
-StartCutScene("agbossgo")
-~ EXIT
+  IF ~~ THEN DO ~Enemy()~ EXIT
 END

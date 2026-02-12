@@ -11,6 +11,8 @@ THEN
 		ActionOverride(Player6,MoveToPoint([1537.2000]))
 		ActionOverride(Player5,MoveToPoint([1465.2000]))
 		MoveToPoint([1480.1887])
+		Wait(2)
+		ActionOverride("AGBOSS",StartDialogueNoSet([PC]))
 		EndCutSceneMode()
 END
 
