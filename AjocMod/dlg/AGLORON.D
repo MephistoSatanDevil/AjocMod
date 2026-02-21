@@ -8,11 +8,6 @@
 BEGIN ~AGLORON~
 
 IF ~Global("AG_Loron_Quest","GLOBAL",2)
-//!Global("AG_Loron_Quest","GLOBAL",2)
-//!GlobalGT("AGLoronJourney","GLOBAL",0)
-//!Global("AGBanditsDead","GLOBAL",7)
-//!Global("AGLoronVillage","GLOBAL",1)
-//!Global("AGLoronArrived","GLOBAL",1)
 ~ THEN BEGIN 0 // from:
   SAY @1 /* ~Ah, finally some adventures. Will you escort old Loron back to my village?~ #62825 */
   IF ~~ THEN REPLY @2 /* ~I'll gladly escort you to your village, if the payment is right.~ #62826 */ GOTO 3

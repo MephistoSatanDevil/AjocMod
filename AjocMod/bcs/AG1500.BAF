@@ -29,7 +29,6 @@ THEN
 		Explore()
 		SetGlobal("AG_CaveLORON","MYAREA",1)
 		Wait(1)
-		DisplayStringHead("AGLORON2",~Heuuhahhhh...~)
 		ActionOverride(Player1,MoveToObject("AGLORON2")
 		Wait(4)
 		EndCutSceneMode()
