@@ -35,7 +35,7 @@ ALWAYS
 	LAF autotra_workaround END
 
 	ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
-		ACTION_DEFINE_ARRAY Ajoc_noconvert BEGIN install END
+//  ACTION_DEFINE_ARRAY Ajoc_noconvert BEGIN END
 
 		ACTION_DEFINE_ARRAY Ajoc_reload BEGIN Setup END
 
@@ -46,7 +46,7 @@ ALWAYS
 				tra_path = EVAL ~weidu_external/%MOD_FOLDER%/Languages/autotra~
 				out_path = EVAL ~weidu_external/%MOD_FOLDER%/Languages/autotra/UTF8~
 				iconv_path = ~AjocMod/Languages/autotra/iconv~
-				noconvert_array = Ajoc_noconvert
+				// noconvert_array = Ajoc_noconvert
 				reload_array = Ajoc_reload
 			END
 
@@ -89,11 +89,12 @@ LANGUAGE ~Italian (translation by Ilot)~
          ~AjocMod/languages/italian/Setup.tra~
          ~AjocMod/languages/italian/items.tra~
 
-		 
 LANGUAGE ~Chinese (translation by barkingdog)~
          ~schinese~
+         ~AjocMod/languages/schinese/Journal.tra~
+         ~AjocMod/languages/schinese/Setup.tra~ // items.tra Included in setup.tra to avoid encodage issue
          ~AjocMod/languages/schinese/install.tra~
-		 
+
 BEGIN @0 //Thanks to Lee Watts for the v1.5 mod fixes. - hlid.
 DESIGNATED 0
 LABEL ~Ajoc-Mod~
