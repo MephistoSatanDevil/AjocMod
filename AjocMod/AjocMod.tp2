@@ -35,7 +35,7 @@ ALWAYS
 	LAF autotra_workaround END
 
 	ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
-		ACTION_DEFINE_ARRAY Ajoc_noconvert BEGIN install END
+		ACTION_DEFINE_ARRAY Ajoc_noconvert BEGIN END
 
 		ACTION_DEFINE_ARRAY Ajoc_reload BEGIN Setup END
 
@@ -92,7 +92,9 @@ LANGUAGE ~Italian (translation by Ilot)~
 		 
 LANGUAGE ~Chinese (translation by barkingdog)~
          ~schinese~
-         ~AjocMod/languages/schinese/install.tra~
+		 ~AjocMod/languages/schinese/Journal.tra~
+         ~AjocMod/languages/schinese/setup.tra~
+		 ~AjocMod/languages/schinese/items.tra~
 		 
 BEGIN @0 //Thanks to Lee Watts for the v1.5 mod fixes. - hlid.
 DESIGNATED 0
