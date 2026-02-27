@@ -46,7 +46,7 @@ ALWAYS
 				tra_path = EVAL ~weidu_external/%MOD_FOLDER%/Languages/autotra~
 				out_path = EVAL ~weidu_external/%MOD_FOLDER%/Languages/autotra/UTF8~
 				iconv_path = ~AjocMod/Languages/autotra/iconv~
-				noconvert_array = Ajoc_noconvert
+				// noconvert_array = Ajoc_noconvert
 				reload_array = Ajoc_reload
 			END
 
@@ -89,7 +89,6 @@ LANGUAGE ~Italian (translation by Ilot)~
          ~AjocMod/languages/italian/Setup.tra~
          ~AjocMod/languages/italian/items.tra~
 
-		 
 LANGUAGE ~Chinese (translation by barkingdog)~
          ~schinese~
 		 ~AjocMod/languages/schinese/Journal.tra~
